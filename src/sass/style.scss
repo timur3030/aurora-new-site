@@ -1,6 +1,5 @@
 @import "libs/bootstrap-reboot.min";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"); // @import "base/variables";
-// @import "base/mixins";
 
 @import "blocks/header";
 @import "blocks/promo";
@@ -26,6 +25,9 @@ body {
   background: #111111;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
