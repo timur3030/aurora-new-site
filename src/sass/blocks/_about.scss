@@ -1,0 +1,39 @@
+.about {
+  padding: 80px 0 60px;
+  background-color: #04121b;
+  border-bottom: 1px solid #333333;
+  user-select: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  scroll-margin-top: 65px;
+  &__wrapper {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto 360px;
+  }
+  &__logo {
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    img {
+      width: 100%;
+      animation: logobeat 2s ease infinite;
+      @keyframes logobeat {
+        from {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.04);
+        }
+
+        to {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

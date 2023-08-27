@@ -1,0 +1,359 @@
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    &__title {
+      font-size: 50px;
+      line-height: 65px;
+    }
+    &__subtitle {
+      margin-top: 20px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  .about {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .products {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      padding: 20px 15px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 65px;
+    }
+    &__img {
+      height: 260px;
+    }
+  }
+  .form {
+    &__title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      column-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    &__wrapper {
+      justify-content: space-between;
+    }
+    &__menu {
+      position: absolute;
+      top: 65px;
+      right: -100%;
+      width: 300px;
+      height: 100vh;
+      padding: 40px 0 0 45px;
+      background-color: rgba(51, 63, 75, 0.95);
+      color: #fff;
+      z-index: 10;
+      transition: all 0.6s;
+    }
+    &__list {
+      display: unset;
+      li {
+        margin-bottom: 20px;
+        a {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: 1px solid #fff;
+            transition: all 0.6s;
+          }
+        }
+      }
+    }
+    &__social {
+      display: grid;
+      grid-template-columns: repeat(2, 32px);
+      column-gap: 32px;
+      padding-top: 30px;
+    }
+  }
+  .active {
+    right: 0;
+  }
+  .hamburger {
+    cursor: pointer;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+      transition: all 0.2s;
+      width: 30px;
+      height: 3px;
+      background: #fff;
+    }
+    &_active {
+      div {
+        margin-bottom: -2px;
+        &:nth-child(1) {
+          transform: translateY(9px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(-11px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .promo {
+    &__title {
+      font-size: 45px;
+      line-height: 55px;
+    }
+    &__subtitle {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+    }
+    &__logo {
+      max-height: 300px;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 100%;
+        width: unset;
+      }
+    }
+  }
+  .products {
+    &__title {
+      font-size: 45px;
+      line-height: 55px;
+    }
+    &__item {
+      padding: 15px 10px;
+    }
+    &__text {
+      p {
+        margin-top: 12px;
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  .form {
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    input,
+    textarea,
+    button {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .promo {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 350px;
+    }
+    &__subtitle {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+  .about {
+    padding: 60px 0 40px;
+    font-size: 18px;
+  }
+  .products {
+    padding: 40px 0;
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  .form {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__wrapper {
+      padding: 20px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__form {
+      padding: 20px;
+      input,
+      textarea,
+      button {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  .footer {
+    &__wrapper h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .header {
+    &__menu {
+      width: 250px;
+    }
+    a {
+      font-size: 16px;
+    }
+    &__logo {
+      span:first-child {
+        font-size: 26px;
+      }
+      a {
+        width: 75px;
+      }
+    }
+  }
+  .promo {
+    height: calc(100vh - 80px);
+    &__title {
+      font-size: 30px;
+      line-height: 32px;
+      max-width: 270px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  .about {
+    font-size: 16px;
+    padding: 40px 0 30px;
+    &__logo {
+      max-height: 200px;
+      padding: 15px 0;
+      img {
+        width: 100%;
+        max-width: 220px;
+      }
+    }
+  }
+  .products {
+    padding: 30px 0;
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__wrapper {
+      row-gap: 30px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__text {
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .form {
+    padding: 30px 0;
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__wrapper {
+      padding: 10px;
+    }
+    &__form {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      padding: 10px;
+    }
+    .form__text,
+    textarea,
+    button {
+      grid-column: unset;
+    }
+    input,
+    textarea {
+      padding: 10px;
+    }
+  }
+  .footer {
+    padding: 30px 0;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 35px;
+    }
+  }
+}
